@@ -7,6 +7,26 @@
                 background-size:cover;
         background-repeat: no-repeat;
         background-position: center center;
+        .service__image__card__description{
+            .review__rating__card {
+                display: flex;
+                margin-top: 12px;
+                align-items: center;
+                padding: 20px;
+                max-width: 375px;
+                background-color: #ffffffa8;
+                border-radius: 15px;
+                color: #000;
+                box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+                    .review__img {
+                        margin-right: 10px;
+                    }
+                                p{
+                    margin-bottom: 0;
+                }
+
+            }
+        }
         .earn__btn{
             a{
             color: #fff;

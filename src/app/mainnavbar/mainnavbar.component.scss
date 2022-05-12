@@ -89,8 +89,8 @@
         .rsui__header {
             .rsui__nav__container {
                 display: block;
-                ul.navbar-nav{
-                    margin-left: -9% !important;
+                li.nav-item a::before {
+                    content: none;
                 }
                 .rsui__mobileui {
                     width: 100%;
