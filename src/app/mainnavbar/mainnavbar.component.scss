@@ -1,4 +1,6 @@
 @import '/src/customvariables/customvariables.scss';
+@import '/src/mixins/mixins.scss';
+
 
 #rsui {
     .rsui__header {
@@ -8,8 +10,7 @@
         top: 0;
         left: 0;
         z-index: 100;
-        background-color: $Variable_readyassist_bgc_yellow;
-        background-image: url('../../assets/images/Bg.jpg');
+        background-image: $Variable__readyassist__bgImg_yellow;
 
         .rsui__nav__container {
             width: 80%;
@@ -21,7 +22,7 @@
                 top: -1px;
                 position: relative;
                 left: -8px;
-                color: #212529;
+                color: $Variable_readyassist_navlink__fc_;
             }
             .navbar-brand {
                 img {
@@ -31,9 +32,9 @@
         }
 
         #rsui__menu-icon {
-            font-size: 28px;
+            font-size: $Variable_readyassist_navlink_fs_28px;
             cursor: pointer;
-            border: 3px solid #5c5252;
+            border: 3px solid var(--border);
             padding: 3px;
             border-radius: 5px;
             color: var(--text-color);
@@ -41,7 +42,6 @@
         }
 
         .rsui__logo {
-            font-size: 1.2rem;
             font-weight: 700;
             color: var(--text-color);
         }
@@ -59,8 +59,8 @@
 
                 &:hover,
                 &:active {
-                    color: #fff;
-                    border-bottom: 2px solid #fff;
+                    color: $Variable_readyassist_navlink__fc_white;
+                    border-bottom: 2px solid var(--bordr--white);
                 }
             }
 
@@ -114,9 +114,7 @@
                 }
 
                 .rsui__mobileui {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                    @include flex_ai_jc(center, space-between);
                 }
             }
 
@@ -128,7 +126,7 @@
         .rsui__header{
             .navbar{
                 a{
-                    font-size: 13px;
+                    font-size: 0.813rem;
                 }
             }
         }

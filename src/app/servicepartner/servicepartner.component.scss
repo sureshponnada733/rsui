@@ -1,36 +1,46 @@
-#rsui__servicepartner{
-    .rsui__servicepartner__container{
-        background-image: url('../../assets/images/bg-green.png');
+@import '/src/customvariables/customvariables.scss';
+@import '/src/mixins/mixins.scss';
+
+#rsui__servicepartner {
+    .rsui__servicepartner__container {
+        background-image: $Variable__readyassist__transparentbg;
         background-color: #000000b0;
-        color: #fff;
-        padding: 70px 0;
-                background-size:cover;
+        color: $Variable_readyassist_layout__bgwhite;
+        padding: $Variable_readyassist_boxlayoutpadding;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        .service__image__card__description{
+
+        .service__image__card__description {
             .review__rating__card {
-                display: flex;
+                @include flex_ai_jc(center, flex-start);
                 margin-top: 12px;
-                align-items: center;
                 padding: 20px;
                 max-width: 375px;
                 background-color: #ffffffa8;
                 border-radius: 15px;
-                color: #000;
+                color: $Variable_readyassist_fc_black;
                 box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
-                    .review__img {
-                        margin-right: 10px;
+
+                .review__img {
+                    margin-right: 10px;
+
+                    img {
+                        width: 50px;
                     }
-                                p{
+                }
+
+                p {
                     margin-bottom: 0;
                 }
 
             }
         }
-        .earn__btn{
-            a{
-            color: #fff;
-        }
+
+        .earn__btn {
+            a {
+                color: $Variable_readyassist_navlink__fc_white;
+            }
         }
     }
 }

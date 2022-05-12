@@ -1,24 +1,16 @@
 @import '/src/customvariables/customvariables.scss';
+@import '/src/mixins/mixins.scss';
 
 #ntui__bookservices {
     .ntui__bookservice__container {
         text-align: center;
         .ntui__bookservice__card {
-            background: #f0f8ff;
+            background: $Variable_readyassist_layout__bgc;
 
             .ntui__bookservice__title {
-                h2 {
-                    color: #161618;
-                    font-family: 'Raleway', sans-serif;
-                    margin-top: 15px;
-                    margin-bottom: -11px;
-                }
-
                 .ntui__bookservice__icon {
-                    display: flex;
-                    align-items: center;
+                    @include flex_ai_jc(center, center);
                     flex-wrap: wrap;
-                    justify-content: center;
                     padding: 20px 0px;
                     a{
                         color: $Variable_readyassist_fc_black;
@@ -41,8 +33,8 @@
                         .icon-title {
                             h5 {
                                 margin: 0;
-                                font-size: 17px;
-                                color: #51565e;
+                                font-size: 1.063rem;
+                                color: var(--text-color);
                             }
                         }
 

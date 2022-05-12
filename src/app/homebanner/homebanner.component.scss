@@ -1,17 +1,18 @@
+@import '/src/customvariables/customvariables.scss';
+@import '/src/mixins/mixins.scss';
+
 #rsui__homewrapper {
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-image: url('../../assets/images/truck_bgc4.png');
+    @include flex_ai_jc(center, flex-start);
+    background-image: $Variable__readyassist__hm__banner;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
     // padding: 170px 60px;
     .rsui__container {
-        padding: 30px 0;
+        padding: $Variable_readyassist_layoutpadding;
 
         .row {
             align-items: center;
@@ -30,14 +31,11 @@
             margin-top: -209px;
 
             h1 {
-                color: #fff;
-                font-family: 'Comfortaa';
+                color: $Variable_readyassist_navlink__fc_white;
             }
 
             .rsui__hmbtn {
-                padding: 12px 12px;
-                background-color: red;
-                color: #fff;
+                color: $Variable_readyassist_navlink__fc_white;
             }
         }
     }
@@ -79,11 +77,9 @@
     #rsui__homewrapper {
         width: 100%;
         height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: #ffc501;
-        background-image: url('../../assets/images/bg-green.png');
+        @include flex_ai_jc(center, space-between);
+        background-color: $Variable_readyassist_bgc_yellow;
+        background-image: $Variable__readyassist__transparentbg;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -108,7 +104,7 @@
                     }
 
                     h1 {
-                        color: #000;
+                        color: $Variable_readyassist_fc_black;
                     }
                 }
             }
@@ -141,7 +137,7 @@
         font-size: 1rem;
         text-align: center;
         text-transform: uppercase;
-        color: #000;
+        color: $Variable_readyassist_fc_black;
     }
 }
 

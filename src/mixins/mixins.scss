@@ -8,3 +8,8 @@
     font-size: $Variable_readyassist_navlink_fs_18px;
     color: $Variable_readyassist_fc_litegrey;
 }
+@mixin flex_ai_jc($ai, $jc) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
