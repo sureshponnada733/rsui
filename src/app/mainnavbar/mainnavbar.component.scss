@@ -1,0 +1,125 @@
+@import '/src/customvariables/customvariables.scss';
+
+#rsui {
+    .rsui__header {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: $Variable_readyassist_bgc_yellow;
+        background-image: url('../../assets/images/Bg.jpg');
+
+        .rsui__nav__container {
+            width: 80%;
+
+            .navbar-brand {
+                img {
+                    width: 35%;
+                }
+            }
+        }
+
+        #rsui__menu-icon {
+            font-size: 28px;
+            cursor: pointer;
+            border: 3px solid #5c5252;
+            padding: 3px;
+            border-radius: 5px;
+            color: var(--text-color);
+            //display: none;
+        }
+
+        .rsui__logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .navbar {
+            column-gap: 2rem;
+            margin-bottom: 0;
+
+            a {
+                color: $Variable_readyassist_fc_black;
+                text-transform: uppercase;
+                font-size: $Variable_readyassist_navlink_fs_14px;
+                border-bottom: 2px solid transparent;
+
+                &:hover,
+                &:active {
+                    color: var(--main-color);
+                    border-bottom: 2px solid var(--main-color);
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// Mobile Responsive
+@media (max-width:769px) {
+    #rsui {
+        .rsui__header {
+            .rsui__nav__container {
+                display: block;
+
+                .rsui__mobileui {
+                    width: 100%;
+
+                    .navbar-toggler:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                #navbarSupportedContent.navbar-collapse.show {
+                    left: 33%;
+                    position: relative;
+                    // background: #ffc500;
+                    transition: all 0.2s ease-in;
+                }
+
+                #navbarSupportedContent.navbar-collapse {
+                    left: -47%;
+                    position: relative;
+                    // background: #ffc500;
+                    transition: all 0.2s ease-in;
+                }
+
+                .rsui__mobileui {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width:768px) {
+    #rsui {
+        .rsui__header {
+            .rsui__nav__container {
+                display: flex;
+                width: 90%;
+
+                #navbarSupportedContent.navbar-collapse {
+                    position: inherit !important;
+                }
+
+                .rsui__mobileui {
+                    width: 28%;
+                    margin-top: -5px;
+
+                    img {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}

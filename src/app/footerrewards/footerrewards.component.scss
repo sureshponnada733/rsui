@@ -1,0 +1,43 @@
+#rsui__footer__rewards {
+    .rsui__footer__rewards__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .rewards__card {
+            display: flex;
+            align-items: center;
+
+            .rewards__list__count__card {
+                p.rewards__list__count {
+                    font-size: 2.3rem;
+                    color: #fff;
+                    margin: 0;
+                }
+
+                p.rewards__list__text {
+                    font-size: 1rem;
+                    color: #fff;
+                    margin: 12px 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    #rsui__footer__rewards {
+        .rsui__footer__rewards__container {
+           flex-wrap: wrap;
+           .rewards__card{
+           flex-basis: 238px;
+           margin: 0 auto;
+           .rewards__list__count__card{
+            .rewards__list__count{
+                font-size: 1.3rem;
+            }
+           }
+           }
+        }
+    }
+}

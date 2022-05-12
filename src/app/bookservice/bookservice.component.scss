@@ -1,0 +1,96 @@
+@import '/src/customvariables/customvariables.scss';
+
+#ntui__bookservices {
+    .ntui__bookservice__container {
+        text-align: center;
+        .ntui__bookservice__card {
+            background: #f0f8ff;
+
+            .ntui__bookservice__title {
+                h2 {
+                    color: #161618;
+                    font-family: 'Raleway', sans-serif;
+                    margin-top: 15px;
+                    margin-bottom: -11px;
+                }
+
+                .ntui__bookservice__icon {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 20px 0px;
+                    a{
+                        color: $Variable_readyassist_fc_black;
+                    }
+
+                    .ntui__icon-box {
+                        display: flex;
+                        flex-basis: 15.65%;
+                        align-items: center;
+                        justify-content: center;
+                        justify-content: center;
+                        padding: 12px;
+                        background: #fff;
+                        border: 1px solid #ebe7e7;
+
+                        &:hover {
+                            border: 1px solid #ffc500;
+                        }
+
+                        .icon-title {
+                            h5 {
+                                margin: 0;
+                                font-size: 17px;
+                                color: #51565e;
+                            }
+                        }
+
+                        .icon {
+                            img {
+                                width: 50px;
+                                position: relative;
+                                left: 5px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:992px) {
+    #ntui__bookservices{
+        .ntui__bookservice__container{
+            .ntui__bookservice__card{
+                .ntui__bookservice__title{
+                    .ntui__bookservice__icon{
+                        .ntui__icon-box{
+                            a{
+                            flex-basis: auto;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media (max-width:768px) {
+    #ntui__bookservices{
+        .ntui__bookservice__container{
+            .ntui__bookservice__card{
+                .ntui__bookservice__title{
+                    .ntui__bookservice__icon{
+                        a{
+                            flex-basis: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
