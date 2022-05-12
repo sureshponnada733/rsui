@@ -1,23 +1,23 @@
+@import '/src/customvariables/customvariables.scss';
+@import '/src/mixins/mixins.scss';
+
 #rsui__footer__rewards {
     .rsui__footer__rewards__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
+        @include flex_ai_jc(center, space-between);
+        padding: $Variable_readyassist_layoutpadding;
         .rewards__card {
             display: flex;
             align-items: center;
-
             .rewards__list__count__card {
                 p.rewards__list__count {
                     font-size: 2.3rem;
-                    color: #fff;
+                    color: $Variable_readyassist_navlink__fc_white;
                     margin: 0;
                 }
 
                 p.rewards__list__text {
                     font-size: 1rem;
-                    color: #fff;
+                    color: $Variable_readyassist_navlink__fc_white;
                     margin: 12px 0;
                 }
             }

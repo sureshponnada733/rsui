@@ -1,7 +1,10 @@
-        #rsui__footer__desc{
+@import '/src/customvariables/customvariables.scss';
+
+#rsui__footer__desc{
             .rsui__footer__desc__container{
+                padding: $Variable_readyassist_layoutpadding;
                 p{
-                    color: #fff;
+                    color: $Variable_readyassist_navlink__fc_white;
                     text-align: justify;
                 }
             }
